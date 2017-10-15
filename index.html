@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalyan Lahkar</title>
+	<link rel="stylesheet" href="style.min.css">
+
+  </head>
+  <body>
+	<div id="hero-container">
+		<div id="hero">
+
+			<div id="hero-content">
+
+				<img src="assets/kalyan.jpg" alt="" id="img-profile">
+
+				<h1>
+					Kalyan Lahkar
+				</h1>
+				<h3>
+					Full&ndash;stack Developer
+				</h3>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div id="content-container" v-cloak>
+
+		<nav>
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="#0"
+					   class="nav-link"
+					   v-bind:class="[tabIndex == 1 ? 'active' : '', '']"
+					   v-on:click="changeTabIndex(1, $event)">
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#0"
+					   class="nav-link"
+					   v-bind:class="[tabIndex == 2 ? 'active' : '', '']"
+					   v-on:click="changeTabIndex(2, $event)">
+						Resume
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#0"
+					   class="nav-link"
+					   v-bind:class="[tabIndex == 3 ? 'active' : '', '']"
+					   v-on:click="changeTabIndex(3, $event)">
+						Social
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div v-if="tabIndex == 1" id="home-content">
+
+			<p>
+				Hi, I'm a web designer/developer from Guwahati, India. I like building things so I chose to become a web developer to build websites and web applications. I am always fascinated and intrigued by all the developments in technology. I try to stay updated on latest web technologies and try to use them in my work as much as possible. I like to be around people and working in a team but I also favor my own space and dont like anyone to infringe on it.
+			</p>
+			<p>
+				Besides coding my hobbies include reading books, listening to music and hand lettering/calligraphy.I have read quite a few books- academic, fiction, non-fiction and what not. Out of which I admire the works of Haruki Murakami and Ernest Hemingway. Music wise, I like Ed Sheeran, Coldplay, Pink Floyd, Nickelback and Greenday. I am nowadays trying out my hand in hand-lettering/calligraphy.
+			</p>
+
+		</div>
+
+		<div v-if="tabIndex == 2" class="content clearfix">
+			<div class="one-third-on-large">
+
+				<div class="collection-item">
+					<a href="mailto:kalyan.sumatoglobal@gmail.com" class="collection-link">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.3 483.3">
+						  <path d="M424.3 57.75H59.1c-32.6 0-59.1 26.5-59.1 59.1v249.6c0 32.6 26.5 59.1 59.1 59.1h365.1c32.6 0 59.1-26.5 59.1-59.1v-249.5c.1-32.6-26.4-59.2-59-59.2zm32.1 308.7c0 17.7-14.4 32.1-32.1 32.1H59.1c-17.7 0-32.1-14.4-32.1-32.1v-249.5c0-17.7 14.4-32.1 32.1-32.1h365.1c17.7 0 32.1 14.4 32.1 32.1v249.5h.1z"/>
+						  <path d="M304.8 238.55l118.2-106c5.5-5 6-13.5 1-19.1-5-5.5-13.5-6-19.1-1l-163 146.3-31.8-28.4c-.1-.1-.2-.2-.2-.3-.7-.7-1.4-1.3-2.2-1.9L78.3 112.35c-5.6-5-14.1-4.5-19.1 1.1-5 5.6-4.5 14.1 1.1 19.1l119.6 106.9-119.1 111.5c-5.4 5.1-5.7 13.6-.6 19.1 2.7 2.8 6.3 4.3 9.9 4.3 3.3 0 6.6-1.2 9.2-3.6l120.9-113.1 32.8 29.3c2.6 2.3 5.8 3.4 9 3.4s6.5-1.2 9-3.5l33.7-30.2 120.2 114.2c2.6 2.5 6 3.7 9.3 3.7 3.6 0 7.1-1.4 9.8-4.2 5.1-5.4 4.9-14-.5-19.1l-118.7-112.7z"/>
+						</svg>
+						<span class="collection-text">
+							<strong>Email</strong><br>
+							<small>kalyan.sumatoglobal@gmail.com</small>
+						</span>
+					</a>
+				</div>
+
+				<div class="collection-item">
+					<div class="collection-content">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						  <g fill="#1663c7">
+						    <path d="M313.9 376.7c41.3-68.5 93.5-164.8 93.5-214.3C407.4 78.9 339.5 11 256 11S104.6 78.9 104.6 162.4c0 49.5 52.2 145.8 93.5 214.3-49 3.7-160.5 17-160.5 61.1 0 43.4 113.2 63.2 218.5 63.2 105.2 0 218.5-19.8 218.5-63.2-.1-44.1-111.7-57.4-160.7-61.1zM125.5 162.4c0-72 58.6-130.6 130.5-130.6 72 0 130.6 58.6 130.6 130.6 0 62.9-100.2 220.7-130.6 267.1-30.4-46.4-130.5-204.2-130.5-267.1zM256 480.1c-127.9 0-197.6-28-197.6-42.4 0-11.1 46-35 152-41.1 19.9 32.1 35 54.8 37 57.5 2.7 3.6 10.6 7.9 17.3 0 2.1-2.5 17.1-25.4 37-57.5 106 6.1 152 29.9 152 41.1-.1 14.5-69.8 42.4-197.7 42.4z"/>
+						    <path d="M321.9 162.4c0-36.4-29.5-65.9-65.9-65.9-36.4 0-65.9 29.5-65.9 65.9 0 36.4 29.5 65.9 65.9 65.9 36.4 0 65.9-29.5 65.9-65.9zm-111 0c0-24.9 20.2-45.1 45.1-45.1s45.1 20.2 45.1 45.1c0 24.9-20.2 45.1-45.1 45.1s-45.1-20.2-45.1-45.1z"/>
+						  </g>
+						</svg>
+						<span class="collection-text">
+							<strong>Address</strong><br>
+							<small>Guwahati, Assam, India</small>
+						</span>
+					</div>
+				</div>
+
+				<div class="collection-item">
+					<div class="collection-content">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						  <path d="M17 20H2.5C1.122 20 0 18.878 0 17.5v-15C0 1.122 1.122 0 2.5 0h8c.214 0 .404.136.473.338l6.5 19c.052.152.027.321-.066.452-.094.132-.245.21-.407.21zM2.5 1C1.673 1 1 1.673 1 2.5v15c0 .827.673 1.5 1.5 1.5h13.8L10.143 1H2.5z"/>
+						  <path d="M21.5 24h-8c-.208 0-.395-.129-.468-.324l-1.5-4c-.097-.259.034-.547.292-.644.259-.096.547.034.644.292L13.847 23H21.5c.827 0 1.5-.673 1.5-1.5v-15c0-.827-.673-1.5-1.5-1.5H12c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9.5C22.878 4 24 5.122 24 6.5v15c0 1.378-1.122 2.5-2.5 2.5z"/>
+						  <path d="M13.5 24c-.117 0-.234-.041-.329-.124-.208-.182-.229-.498-.047-.706l3.5-4c.182-.209.498-.229.706-.047.208.182.229.498.047.706l-3.5 4c-.1.113-.238.171-.377.171zM9.5 14c-.206 0-.398-.127-.471-.332L7 7.987l-2.029 5.681c-.093.26-.38.396-.639.303-.26-.093-.396-.379-.303-.639l2.5-7c.142-.398.8-.398.941 0l2.5 7c.093.26-.042.546-.303.639-.054.02-.111.029-.167.029z"/>
+						  <path d="M8 11H6c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h2c.276 0 .5.224.5.5s-.224.5-.5.5zM21.5 11h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h7c.276 0 .5.224.5.5s-.224.5-.5.5z"/>
+						  <path d="M17.5 11c-.276 0-.5-.224-.5-.5v-1c0-.276.224-.5.5-.5s.5.224.5.5v1c0 .276-.224.5-.5.5zM16 17c-.157 0-.311-.073-.408-.21-.16-.225-.107-.537.118-.697 2.189-1.555 3.79-4.727 3.79-5.592 0-.276.224-.5.5-.5s.5.224.5.5c0 1.318-1.927 4.785-4.21 6.408-.088.061-.189.091-.29.091z"/>
+						  <path d="M20 18c-.121 0-.242-.043-.337-.131-.363-.332-3.558-3.283-4.126-4.681-.104-.256.02-.547.275-.651.253-.103.547.019.651.275.409 1.007 2.936 3.459 3.875 4.319.204.187.217.502.031.707-.099.107-.234.162-.369.162z"/>
+					  	</svg>
+						<span class="collection-text">
+							<strong>Languages</strong><br>
+							<small>English, Assamese, Hindi</small>
+						</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="two-third-on-large">
+				<h4 class="content-heading pt-1">
+					WORK
+				</h4>
+				<p class="mb-3">
+					<strong class="fw-500 text-primary mb-half d-block">
+						May 2016 &mdash; Present
+					</strong>
+					<strong>Sumato Globaltech</strong> <br>
+					Role: Full Stack Developer
+				</p>
+
+				<h4 class="content-heading">
+					EDUCATION
+				</h4>
+				<p class="mb-3">
+					<strong class="fw-500 text-primary mb-half d-block">
+						2011 &mdash; 2015
+					</strong>
+					<strong>Bachelor of Engineering</strong> <br>
+					In: Electronics and Telecommunication <br>
+					From: Assam Engineering College
+				</p>
+
+				<h4 class="content-heading mb-0">
+					SKILLS
+				</h4>
+
+				<div class="clearfix mb-1">
+
+					<div class="one-tenth-on-large collection-item">
+						<div class="collection-content px-0">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							  <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+							</svg>
+						</div>
+					</div>
+					<div class="nine-tenth-on-large">
+						<h4 class="content-heading fw-300 pt-1">
+							HTML
+						</h4>
+						<div class="progress-container">
+							<div class="progress-bar" style="width: 80%">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="clearfix mb-1">
+
+					<div class="one-tenth-on-large collection-item">
+						<div class="collection-content px-0">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							  <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+							</svg>
+						</div>
+					</div>
+					<div class="nine-tenth-on-large">
+						<h4 class="content-heading fw-300 pt-1">
+							CSS
+						</h4>
+						<div class="progress-container">
+							<div class="progress-bar" style="width: 85%">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="clearfix mb-1">
+
+					<div class="one-tenth-on-large collection-item">
+						<div class="collection-content px-0">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							  <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+							</svg>
+						</div>
+					</div>
+					<div class="nine-tenth-on-large">
+						<h4 class="content-heading fw-300 pt-1">
+							Javascript
+						</h4>
+						<div class="progress-container">
+							<div class="progress-bar" style="width: 65%">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="clearfix mb-1">
+
+					<div class="one-tenth-on-large collection-item">
+						<div class="collection-content px-0">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							  <path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM9.615 15.998c.175.645.156 1.248-.024 1.792l-.065.18c-.024.061-.052.12-.078.176-.14.29-.326.56-.555.81-.698.759-1.672 1.047-2.09.805-.45-.262-.226-1.335.584-2.19.871-.918 2.12-1.509 2.12-1.509v-.003l.108-.061zm9.911-10.861c-.542-2.133-4.077-2.834-7.422-1.645-1.989.707-4.144 1.818-5.693 3.267C4.568 8.48 4.275 9.98 4.396 10.607c.427 2.211 3.457 3.657 4.703 4.73v.006c-.367.18-3.056 1.529-3.686 2.925-.675 1.47.105 2.521.615 2.655 1.575.436 3.195-.36 4.065-1.649.84-1.261.766-2.881.404-3.676.496-.135 1.08-.195 1.83-.104 2.101.24 2.521 1.56 2.43 2.1-.09.539-.523.854-.674.944-.15.091-.195.12-.181.181.015.09.091.09.21.075.165-.03 1.096-.45 1.141-1.471.045-1.29-1.186-2.729-3.375-2.7-.9.016-1.471.091-1.875.256-.03-.045-.061-.075-.105-.105-1.35-1.455-3.855-2.475-3.75-4.41.03-.705.285-2.564 4.8-4.814 3.705-1.846 6.661-1.335 7.171-.21.733 1.604-1.576 4.59-5.431 5.024-1.47.165-2.235-.404-2.431-.615-.209-.225-.239-.24-.314-.194-.12.06-.045.255 0 .375.12.3.585.825 1.396 1.095.704.225 2.43.359 4.5-.45 2.324-.899 4.139-3.405 3.614-5.505l.073.067z"/>
+							</svg>
+						</div>
+					</div>
+					<div class="nine-tenth-on-large">
+						<h4 class="content-heading fw-300 pt-1">
+							SASS
+						</h4>
+						<div class="progress-container">
+							<div class="progress-bar" style="width: 70%">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="clearfix mb-1">
+
+					<div class="one-tenth-on-large collection-item">
+						<div class="collection-content px-0">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							  <path d="M6.462 13.274l13.7-3.282c-.758-1.077-4.205-5.963-4.537-6.427-.375-.524.008-.769.617-.87.608-.104 5.85-.984 6.298-1.049.377-.055.69-.177 1.212.307C23.272.811 22.139.008 20.819.008H3.197C1.644.008.353 1.117.074 2.59l6.388 10.684z"/>
+							  <path d="M22.737 2.882c-.206.044-4.765.869-5.045.907-.28.037-.188.194-.074.355l4.011 5.502L24 9.063V3.932c-.33-.42-.569-.729-.626-.811-.255-.344-.432-.287-.637-.239M24 15.129c-1.165-1.598-2.436-3.336-2.557-3.508-.166-.24-.255-.285-.648-.159L7.439 14.939s4.1 7.104 4.414 7.554c.315.456.508.418.753.314.181-.08 7.796-2.654 11.393-3.872v-3.803l.001-.003zm0-2.35v-2.008l-1.25.334L24 12.779m-8.199 11.213h5.019c1.675 0 3.047-1.294 3.171-2.936-2.563.927-5.883 2.114-8.191 2.936M5.547 15.43L0 16.875v3.936c.017 1.757 1.441 3.182 3.195 3.182h7.194c-.941-1.537-3.503-6.153-4.833-8.563m-1.12-2.069L.017 5.729v9.098l4.328-1.033c.353-.082.269-.128.095-.432"/>
+							  <path d="M22.645 10.959L24 10.591v.63l-.929.311-.426-.573z"/>
+							</svg>
+						</div>
+					</div>
+					<div class="nine-tenth-on-large">
+						<h4 class="content-heading fw-300 pt-1">
+							Laravel
+						</h4>
+						<div class="progress-container">
+							<div class="progress-bar" style="width: 75%">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="clearfix mb-1">
+
+					<div class="one-tenth-on-large collection-item">
+						<div class="collection-content px-0">
+							<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+							  <path fill="#1663c7" d="M237.416794 86.655208l-30.225333 52.352-30.22533-52.352H76.311464L207.19146 313.344535 338.07146 86.655208z"/>
+							  <path fill="#1663c7" d="M237.416794 86.655208l-30.225333 52.352-30.22533-52.352h-48.302667l78.527998 136.01333 78.528-136.01333z"/>
+							</svg>
+						</div>
+					</div>
+					<div class="nine-tenth-on-large">
+						<h4 class="content-heading fw-300 pt-1">
+							Vue JS
+						</h4>
+						<div class="progress-container">
+							<div class="progress-bar" style="width: 55%">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div v-if="tabIndex == 3" class="content clearfix">
+
+			<div class="half-on-large">
+				<ul class="collection">
+					<li class="collection-item">
+						<a href="https://www.linkedin.com/in/kalyan-lahkar/" class="collection-link">
+						<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						  <title>LinkedIn icon</title>
+						  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+						</svg>
+
+							<span class="collection-text">
+								LinkedIn
+							</span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="https://www.instagram.com/kalyan_l/" class="collection-link">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							  <title>Instagram icon</title>
+							  <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+							</svg>
+							<span class="collection-text">
+								Instagram
+							</span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="https://kalyanlahkar.wordpress.com/" class="collection-link">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							  <title>WordPress icon</title>
+							  <path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/>
+							</svg>
+							<span class="collection-text">
+								Wordpress
+							</span>
+						</a>
+
+					</li>
+				</ul>
+			</div>
+
+			<div class="half-on-large">
+				<ul class="collection">
+
+					<li class="collection-item">
+						<a href="https://stackoverflow.com/users/7845905/kalyan-lahkar" class="collection-link">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							  <title>Stack Overflow icon</title>
+							  <path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.936v.014zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.35 1.617-.01.001zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.749 0h.002z"/>
+							</svg>
+							<span class="collection-text">
+								Stack Overflow
+							</span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="https://twitter.com/Kalyan_lahkar" class="collection-link">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							  <title>Twitter icon</title>
+							  <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+							</svg>
+							<span class="collection-text">
+								Twitter
+							</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="vue.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el: '#content-container',
+			data: {
+				tabIndex: 1
+			},
+			methods: {
+				changeTabIndex: function(newTabIndex, event) {
+					event.preventDefault();
+					this.tabIndex = newTabIndex;
+				}
+			}
+		});
+	</script>
+
+  </body>
+</html>
