@@ -17,7 +17,7 @@
 
 			<div id="hero-content">
 
-				<img src="assets/kalyan.jpg" alt="" id="img-profile">
+				<img src="assets/kalyan.jpg" alt="Image of Kalyan Lahkar" id="img-profile">
 
 				<h1>
 					Kalyan Lahkar
@@ -38,6 +38,7 @@
 				<li class="nav-item">
 					<a href="#0"
 					   class="nav-link"
+					   title="Home"
 					   v-bind:class="[tabIndex == 1 ? 'active' : '', '']"
 					   v-on:click="changeTabIndex(1, $event)">
 						Home
@@ -46,6 +47,7 @@
 				<li class="nav-item">
 					<a href="#0"
 					   class="nav-link"
+					   title="Resume"
 					   v-bind:class="[tabIndex == 2 ? 'active' : '', '']"
 					   v-on:click="changeTabIndex(2, $event)">
 						Resume
@@ -54,6 +56,7 @@
 				<li class="nav-item">
 					<a href="#0"
 					   class="nav-link"
+					   title="Social"
 					   v-bind:class="[tabIndex == 3 ? 'active' : '', '']"
 					   v-on:click="changeTabIndex(3, $event)">
 						Social
